@@ -1,0 +1,16 @@
+body {
+    color: black;
+    background-image: url("../images/question.jpg");
+    margin: auto;
+    
+
+}
+.container{
+    background-color: white;
+    padding: 5px 5px;
+    
+}
+
+h3{
+    padding: 20px;
+}

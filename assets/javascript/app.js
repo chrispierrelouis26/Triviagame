@@ -1,7 +1,9 @@
 console.log("hey there");
 
+$(document).ready(function(){
 
-var time = 180;
+
+var time = 10;
 
 
  function start() {
@@ -39,6 +41,78 @@ var time = 180;
     else if (minutes < 10) {
       minutes = "0" + minutes;
     }
+    else if ( seconds < 0 && minutes !=0){
+      minutes -=1;
+      seconds=59;
+    }
 
     return minutes + ":" + seconds;
   }
+
+  function stop() {
+    clearInterval(intervalId);
+    count = false;
+    
+  }
+
+
+    $("#button").on("click" , function(){
+      console.log("good morning!");
+
+   
+
+  });
+
+
+  $("#button1").on("click" ,function(){
+    alert("you pressed me!");
+  });
+  
+  
+  $("#button3").on("click" ,function(){
+    alert("Thats correct!");
+  });
+  
+  $(".q-0").on("click", function(){
+    console.log($(this).text());
+  });
+// Array of questions
+
+
+var questions = {
+  Q1: {
+   Question:"Who is the President of the United States?" ,
+    Options:["Donald Trump" , "Barak Obama" , "Ronald Raegan", "Abraham Lincoln"],
+    Answer:"Donald Trump"
+  },
+
+  Q2: {
+  Question2: "What is my last name?"  ,
+  Options: ["Pierre", "Smith", "Doe", "Adams"],
+  Answer: "Pierre"
+ },
+
+Q3: {
+  Question3: "What is my name?" ,
+ Options: ["Chris", "Mark" , " Alex" ,"Josh"],
+ Answer: "Chris"
+},
+
+Q4:{
+  Question4: "What is the largest ocean in the world?" ,
+  Options: [ "Pacific","Atlantic" , "Arctic", "Oceanic"],
+  Answer : "Pacific"
+}
+
+};
+console.log(questions);
+
+for (i = 0; i < questions.length; i++) { 
+  $("#trivia").append(radio);
+}
+
+
+});
+
+
+

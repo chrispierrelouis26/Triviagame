@@ -8,7 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
     <title></title>
 </head>
 
@@ -26,74 +26,72 @@
             </div>
 
         </div>
-    <div class="row">
-        <div class="col-md-12 text-center">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 text-center">
-        
-            <h3 id="question1">Who is the President of the United States?</h3>
-        </div>
-    </div>
-
-    <div class="row"id="trivia">
-        <div class="col-md-12 text-center">
-            <form name="form1" action="">
-                <input type="radio" name="gender" value="male"> Donald Trump<br>
-                <input type="radio" name="gender" value="female"> Barak Obama<br>
-                <input type="radio" name="gender" value="other"> Me
-              </form>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h3 id="question2">What is the worlds largest ocean?</h3>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <form name="form1" action="">
-                <input type="radio" name="gender" value="male"> Atlantic<br>
-                <input type="radio" name="gender" value="female"> Pacific<br>
-                <input type="radio" name="gender" value="other"> Specific
-              </form>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h3 id="question3">What is my name?</h3>
-        </div>
-    </div>
-    <div class="row">
+        <div class="row">
             <div class="col-md-12 text-center">
-                <form name="form1" action="">
-                        <div id="quiz"> </div>
-                    <input type="radio" name="gender" value="male"> Dylon<br>
-                    <input type="radio" name="gender" value="female"> Christopher<br>
-                    <input type="radio" name="gender" value="other"> Rick
-                  </form>
             </div>
         </div>
-        <div class="row">
+        <form>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <h3 id="question1">Who is the President of the United States?</h3>
+                </div>
+            </div>
+
+            <div class="row" id="trivia">
+                <div class="col-md-12 text-center">
+                    <input type="radio" name="q-0" value="Donald Trump"> Donald Trump<br>
+                    <input type="radio" name="q-0" value="Barak Obama"> Barak Obama<br>
+                    <input type="radio" name="q-0" value="me"> Me
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 id="question2">What is the worlds largest ocean?</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <input type="radio" name="q-1" value="Atlantic"> Atlantic<br>
+                    <input type="radio" name="q-1" value="Pacific"> Pacific<br>
+                    <input type="radio" name="q-1" value="other"> other
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 id="question3">What is my name?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <div id="quiz"> </div>
+                    <input type="radio" name="q-2" value="Dylon"> Dylon<br>
+                    <input type="radio" name="q-2" value="Christopher"> Christopher<br>
+                    <input type="radio" name="q-2" value="Rick"> Rick
+
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-12 text-center">
                     <h3 id="question4">What is the capital of New Mexico?</h3>
                 </div>
             </div>
             <div class="col-md-12 text-center">
-                <form name="form1" action="">
-                    <input type="radio" name="gender" value="male"> Charlotte<br>
-                    <input type="radio" name="gender" value="female"> Albany<br>
-                    <input type="radio" name="gender" value="other"> Sante Fe
-                 
-                  </form>
-                </div>
-          <button id="button">Click me!</button>
 
-          
+                <input type="radio" name="q-3" value="Charlotte"> Charlotte<br>
+                <input type="radio" name="q-3" value="Albany"> Albany<br>
+                <input type="radio" name="q-3" value="Sante Fe"> Sante Fe
+
+            </div>
+            <button id="button">Submit</button>
+
+        </form>
     </div>
-    
+
     <script src="assets/javascript/app.js"></script>
 
 </body>

@@ -24,58 +24,58 @@ var time = 10;
     $("#timer").text(converted);
   }
 
-  start();
+  // start();
 
-   function timeConverter(t) {
+  //  function timeConverter(t) {
 
-    var minutes = Math.floor(t / 60);
-    var seconds = t - (minutes * 60);
+  //   var minutes = Math.floor(t / 60);
+  //   var seconds = t - (minutes * 60);
 
-    if (seconds < 10) {
-      seconds = "0" + seconds;
-    }
+  //   if (seconds < 10) {
+  //     seconds = "0" + seconds;
+  //   }
 
-    if (minutes === 0) {
-      minutes = "00";
-    }
-    else if (minutes < 10) {
-      minutes = "0" + minutes;
-    }
-    else if ( seconds < 0 && minutes !=0){
-      minutes -=1;
-      seconds=59;
-    }
+  //   if (minutes === 0) {
+  //     minutes = "00";
+  //   }
+  //   else if (minutes < 10) {
+  //     minutes = "0" + minutes;
+  //   }
+  //   else if ( seconds < 0 && minutes !=0){
+  //     minutes -=1;
+  //     seconds=59;
+  //   }
 
-    return minutes + ":" + seconds;
-  }
+  //   return minutes + ":" + seconds;
+  // }
 
-  function stop() {
-    clearInterval(intervalId);
-    count = false;
+  // function stop() {
+  //   clearInterval(intervalId);
+  //   count = false;
     
-  }
+  // }
 
 
-    $("#button").on("click" , function(){
-      console.log("good morning!");
+  //   $("#button").on("click" , function(){
+  //     console.log("good morning!");
 
    
 
-  });
+  // });
 
 
-  $("#button1").on("click" ,function(){
-    alert("you pressed me!");
-  });
+  // $("#button1").on("click" ,function(){
+  //   alert("you pressed me!");
+  // });
   
   
-  $("#button3").on("click" ,function(){
-    alert("Thats correct!");
-  });
+  // $("#button3").on("click" ,function(){
+  //   alert("Thats correct!");
+  // });
   
-  $(".q-0").on("click", function(){
-    console.log($(this).text());
-  });
+  // $(".q-0").on("click", function(){
+  //   console.log($(this).text());
+  // });
 // Array of questions
 
 
@@ -106,13 +106,26 @@ Q4:{
 
 };
 console.log(questions);
+console.log(questions.Q1.Question);
 
 for (i = 0; i < questions.length; i++) { 
-  $("#trivia").append(radio);
+  
 }
+
+var correctAnswers = 0;
+var wrongAnswers = 0;
+var intervalId = 0;
+
+
 
 
 });
 
 
 
+
+
+    // $("#quiz").append('<input type="radio" name="question-' + i + '" value="' + questions[i].options.answers + '"> ' + questions[i].answers.a + '<br>')
+    // $("#quiz").append('<input type="radio" name="question-' + i + '" value="' + questions[i].options.answers + '"> ' + questions[i].answers.b + '<br>')
+    // $("#quiz").append('<input type="radio" name="question-' + i + '" value="' + questions[i].options.answers + '"> ' + questions[i].answers.c + '<br>')
+// }
